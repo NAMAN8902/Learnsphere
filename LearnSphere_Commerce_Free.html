@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnSphere — Commerce Learning</title>
+<style>
+:root{--navy:#172554;--blue:#3157d5;--sky:#eaf0ff;--ink:#172033;--muted:#64708a;--paper:#f7f8fc;--white:#fff;--green:#16845b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--paper)}
+header{background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #e8ebf3}.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-size:22px;font-weight:850;color:var(--navy);letter-spacing:-.7px}.logo span{color:var(--blue)}nav{display:flex;gap:20px}nav a{color:#48536b;text-decoration:none;font-size:14px;font-weight:700}nav a:hover{color:var(--blue)}
+button,.btn{border:0;border-radius:11px;background:var(--blue);color:#fff;padding:12px 17px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-block}button:hover,.btn:hover{filter:brightness(.94)}.outline{background:#fff;color:var(--blue);border:1px solid #d8e0ff}
+.hero{background:linear-gradient(120deg,#172554,#2949a5);color:white;padding:65px 22px 72px}.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#c5d3ff;font-weight:800}h1{font-size:clamp(38px,5vw,58px);line-height:1.06;letter-spacing:-2px;margin:15px 0}.hero p{color:#dce5ff;line-height:1.7;max-width:540px;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero .outline{background:transparent;color:#fff;border-color:#8298e4}.hero-card{background:#fff;color:var(--ink);padding:24px;border-radius:22px;box-shadow:0 25px 60px #0b174c66}.hero-card h3{margin:0 0 15px}.progress{height:9px;background:#edf0f8;border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;width:0;background:var(--blue);border-radius:20px;transition:width .3s}.statrow{display:flex;justify-content:space-between;font-weight:800;margin:10px 0}
+main{max-width:1120px;margin:auto;padding:48px 22px}.section{margin-bottom:48px}.section-head{margin-bottom:20px}h2{font-size:29px;letter-spacing:-.8px;margin:0 0 8px}.sub{color:var(--muted);margin:0;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:#fff;border:1px solid #e9ecf4;border-radius:17px;padding:21px;box-shadow:0 5px 18px #18254a08}.icon{width:44px;height:44px;border-radius:13px;background:var(--sky);display:grid;place-items:center;font-size:22px;margin-bottom:14px}.card h3{margin:0 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6}.card button{margin-top:8px}
+.band{background:#eef2ff;border-radius:20px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:20px}.plannerbox,.quizbox,.notesbox{background:#fff;border:1px solid #e6eaf3;padding:22px;border-radius:18px;margin-top:16px}.inputrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}input,select{padding:12px 13px;border:1px solid #dce2ef;border-radius:10px;font:inherit;min-width:0}input{flex:1}.goal{padding:10px 0;border-bottom:1px solid #edf0f5;display:flex;justify-content:space-between;gap:12px}.goal:last-child{border:0}.goal button{padding:6px 10px;background:#fff;color:#b42318;border:1px solid #f1cccc}
+.quiz{max-width:760px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}.answers button{background:#f2f4fa;color:var(--ink);text-align:left;border:1px solid #e5e9f2}.answers button.selected{background:#e9efff;border-color:var(--blue);color:var(--blue)}#feedback{font-weight:750;margin:12px 0;min-height:24px}
+details{border-bottom:1px solid #edf0f5;padding:14px 0}summary{cursor:pointer;font-weight:750}details p{color:var(--muted);line-height:1.65;margin-bottom:0}.tag{display:inline-block;background:#e9efff;color:#3157d5;padding:5px 9px;border-radius:20px;font-size:12px;font-weight:750}
+footer{background:#172554;color:#dce5ff;padding:26px 22px;text-align:center;font-size:13px}
+@media(max-width:760px){nav{gap:10px}nav a{display:none}.hero-inner{grid-template-columns:1fr}.hero{padding:48px 18px}.grid{grid-template-columns:1fr}.band{align-items:flex-start;flex-direction:column}.answers{grid-template-columns:1fr}main{padding:38px 18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="logo">Learn<span>Sphere.</span></div><nav><a href="#subjects">Subjects</a><a href="#planner">Study planner</a><a href="#notes">Notes</a><a href="#quiz">Quiz</a></nav><a class="btn" href="#subjects">Start learning</a></div></header>
+<section class="hero"><div class="hero-inner">
+<div><div class="eyebrow">Commerce learning space</div><h1>Learn smarter.<br>Grow every day.</h1><p>One place for Class 11 and 12 Commerce students to revise Accountancy, Economics and Business Studies, practise questions and build a steady study habit.</p><div class="hero-actions"><a class="btn" href="#subjects">Explore subjects</a><a class="btn outline" href="#quiz">Try a quick quiz</a></div></div>
+<div class="hero-card"><h3>📘 Your study dashboard</h3><p style="color:#64708a;font-size:13px">Your saved study goals</p><div class="statrow"><span>Goals completed</span><span id="goalCount">0</span></div><div class="progress"><span id="progressBar"></span></div><p id="progressText" style="font-size:13px;color:#64708a;margin-bottom:0">Add a goal in your study planner to get started.</p></div>
+</div></section>
+<main>
+<section class="section" id="subjects"><div class="section-head"><h2>Explore Commerce subjects</h2><p class="sub">Choose a subject and study one topic at a time.</p></div><div class="grid">
+<article class="card"><div class="icon">📊</div><span class="tag">Practice + concepts</span><h3>Accountancy</h3><p>Journal entries, ledger, trial balance, accounting equation and more.</p><button onclick="showSubject('accountancy')">Open Accountancy</button></article>
+<article class="card"><div class="icon">📈</div><span class="tag">Theory + numericals</span><h3>Economics</h3><p>Microeconomics, statistics, demand, utility and collection of data.</p><button onclick="showSubject('economics')">Open Economics</button></article>
+<article class="card"><div class="icon">🏢</div><span class="tag">Definitions + examples</span><h3>Business Studies</h3><p>Business concepts, clear explanations, examples and exam-ready points.</p><button onclick="showSubject('bst')">Open Business Studies</button></article>
+</div><div class="notesbox" id="subjectPanel" hidden><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><h3 id="subjectTitle">Subject</h3><button class="outline" onclick="closeSubject()">Close</button></div><p id="subjectIntro" class="sub"></p><div id="chapterList"></div></div></section>
+
+<section class="section" id="planner"><div class="band"><div><h2>Make today count.</h2><p class="sub">Set a small study goal and tick it off when you finish.</p></div><span class="tag">Saved on this device</span></div><div class="plannerbox"><h3>Today's study goals</h3><div class="inputrow"><input id="goalInput" placeholder="Example: Revise demand in Economics"><button onclick="addGoal()">Add goal</button></div><div id="goalList" style="margin-top:12px"></div></div></section>
+
+<section class="section" id="notes"><div class="section-head"><h2>Sample study notes</h2><p class="sub">A few starter concepts. More chapter notes can be added later.</p></div><div class="notesbox">
+<details open><summary>Accountancy — Accounting</summary><p>Accounting is the process of identifying, recording, classifying, summarising and communicating financial information.</p></details>
+<details><summary>Economics — Marginal Utility</summary><p>Marginal utility is the additional satisfaction a consumer gets from consuming one more unit of a commodity.</p></details>
+<details><summary>Business Studies — Business</summary><p>Business is an economic activity concerned with the production or purchase and sale of goods and services to earn profit.</p></details>
+</div></section>
+
+<section class="section quiz" id="quiz"><h2>Quick knowledge check</h2><p class="sub">Try this Economics question.</p><div class="quizbox"><b>What does marginal utility mean?</b><div class="answers"><button onclick="choose(this,false)">A. Total satisfaction from all units</button><button onclick="choose(this,true)">B. Additional satisfaction from one more unit</button><button onclick="choose(this,false)">C. Money spent on a product</button><button onclick="choose(this,false)">D. Number of goods available</button></div><div id="feedback" aria-live="polite"></div><button class="outline" onclick="resetQuiz()">Try again</button></div></section>
+</main><footer>LearnSphere · Commerce learning, practice and progress.</footer>
+<script>
+const chapters={
+ accountancy:{title:'📊 Accountancy',intro:'Start with these Class 11 Accountancy topics. This is a starter chapter list.',items:['Introduction to Accounting','Basic Accounting Terms','Accounting Equation','Rules of Debit and Credit','Journal','Ledger','Trial Balance']},
+ economics:{title:'📈 Economics',intro:'Explore Microeconomics and Statistics for Economics.',items:['Introduction to Economics','Consumer Behaviour','Utility and Marginal Utility','Indifference Curve','Demand and Elasticity of Demand','Collection of Data','Organisation of Data']},
+ bst:{title:'🏢 Business Studies',intro:'Learn key business concepts with definitions and examples.',items:['Nature and Purpose of Business','Forms of Business Organisation','Private, Public and Global Enterprises','Business Services','Emerging Modes of Business']}
+};
+function showSubject(key){let s=chapters[key];document.getElementById('subjectPanel').hidden=false;document.getElementById('subjectTitle').textContent=s.title;document.getElementById('subjectIntro').textContent=s.intro;document.getElementById('chapterList').innerHTML=s.items.map((x,i)=>`<details><summary>${i+1}. ${x}</summary><p>Chapter material for <b>${x}</b> will be added here. You can use this section for definitions, explanations, examples and practice questions.</p></details>`).join('');document.getElementById('subjectPanel').scrollIntoView({behavior:'smooth',block:'start'})}
+function closeSubject(){document.getElementById('subjectPanel').hidden=true}
+let goals=JSON.parse(localStorage.getItem('learnsphereGoals')||'[]');
+function saveGoals(){localStorage.setItem('learnsphereGoals',JSON.stringify(goals));renderGoals()}
+function addGoal(){let v=document.getElementById('goalInput').value.trim();if(!v)return;goals.push({text:v,done:false});document.getElementById('goalInput').value='';saveGoals()}
+function toggleGoal(i){goals[i].done=!goals[i].done;saveGoals()}
+function deleteGoal(i){goals.splice(i,1);saveGoals()}
+function renderGoals(){let list=document.getElementById('goalList');list.innerHTML=goals.length?goals.map((g,i)=>`<div class="goal"><label><input type="checkbox" ${g.done?'checked':''} onchange="toggleGoal(${i})" style="min-width:auto;flex:none"> <span style="${g.done?'text-decoration:line-through;color:#64708a':''}">${escapeHtml(g.text)}</span></label><button onclick="deleteGoal(${i})">Remove</button></div>`).join(''):'<p class="sub">No goals yet. Add your first study goal above.</p>';let done=goals.filter(g=>g.done).length;document.getElementById('goalCount').textContent=done+'/'+goals.length;document.getElementById('progressBar').style.width=(goals.length?done/goals.length*100:0)+'%';document.getElementById('progressText').textContent=goals.length?`${done} of ${goals.length} goals completed.`:'Add a goal in your study planner to get started.'}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function choose(btn,correct){document.querySelectorAll('.answers button').forEach(b=>{b.classList.remove('selected');b.disabled=true});btn.classList.add('selected');let f=document.getElementById('feedback');f.textContent=correct?'Correct! Marginal utility is the additional satisfaction from one more unit.':'Not quite. Marginal means extra or additional. Try again!';f.style.color=correct?'#16845b':'#b45309'}
+function resetQuiz(){document.querySelectorAll('.answers button').forEach(b=>{b.disabled=false;b.classList.remove('selected')});document.getElementById('feedback').textContent=''}
+renderGoals();
+</script></body></html>
